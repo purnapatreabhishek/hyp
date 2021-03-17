@@ -131,7 +131,7 @@ Design and Developed by: iqonicthemes.in
 	
 
     header .social-icone{display: none;}
-    header .mega-menu .menu-logo>li>a img{height: 35px;}
+    header .mega-menu .menu-logo>li>a img{height: auto;}
     header .mega-menu.mobileTopFixed .menu-list-items{background: #ffffff; -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);}
     header .mega-menu .menu-links{top: 45px;position: absolute; background: #fff;}
     header .mega-menu .menu-links li a.buttton{display: none;}
