@@ -1,10 +1,10 @@
 <?php
     if(isset($_GET['code'])){
         if($_GET['code'] == null){
-            $amount = 3500;
+            $amount = 1999;
         }else {
             $code = $_GET['code'];
-            $conn = new mysqli('localhost','padhhigh_padhhigh','padhhigh','padhhigh_padhhigh');
+            $conn = new mysqli('localhost','root','','padhhigh_padhhigh');
             if ($conn->connect_error) {
                 die("Connection Failed: " . $conn->connect_error);
             }else{
@@ -30,7 +30,7 @@
             }
         }
     }else{
-        $amount = 3500;
+        $amount = 1999;
     }
 ?>
 
@@ -187,10 +187,10 @@
 
                             <div class="d-flex justify-content-center mb-4">
                               <span class="price  font-weight-bold display-4 mb-0" style="color:#ffb100">₹ <?php
-                                   if($amount == 3500){
+                                   if($amount == 1999){
                                       echo $amount;
                                       }else{
-                                          echo "<del>3500</del> $amount";
+                                          echo "<del>$actual_amount</del> $amount";
                                       }
 
                                   ?></span>
