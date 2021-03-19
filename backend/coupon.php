@@ -9,7 +9,7 @@
     // $con_det = $_POST['contactdetails'];
     // $comments = $_POST['comments'];
     if(isset($code)){
-        $conn = new mysqli('localhost','padhhigh_padhhigh','padhhigh','padhhigh_padhhigh');
+        $conn = new mysqli('localhost','root','','padhhigh_padhhigh');
         if ($conn->connect_error) {
             die("Connection Failed: " . $conn->connect_error);
         }else{
