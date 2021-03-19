@@ -13,15 +13,15 @@
         $linke = 'https://imjo.in/HNsxgM';
     }
 
-    $conn = new mysqli('localhost','padhhigh_padhhigh','padhhigh','padhhigh_padhhigh');
+    $conn = new mysqli('localhost','root','','padhhigh_padhhigh');
     if ($conn->connect_error) {
         die("Connection Failed: " . $conn->connect_error);
     }else{
-        $stmt = $conn->prepare("insert into payment(name, email, contactno, city, education, college, code_used)
-            values(?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssssss",$Mname, $Memail, $contactno, $city, $education, $college, $code_value);
-        $stmt->execute();
         
+        $stmt ="insert into payment(name, email, contactno, city, education, college, code_used)
+            values('$Mname', '$Memail', '$contactno', '$city', '$education', '$college', '$code_value')";
+
+        mysqli_query($conn,$stmt);
         //External code for creating a payment request
         
         $ch = curl_init();
